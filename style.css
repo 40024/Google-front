@@ -1,0 +1,56 @@
+body {
+    background-color: #ffffff;
+}
+
+/* div {
+    display: inline-block;
+} */
+
+a {
+    margin-right: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+#nav-div {
+    display: flex;
+    justify-content: end;
+}
+
+#nav-div > a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-div > a:hover {
+    background-color: rgba(0,0,0,0.3); 
+    text-decoration: none;
+}
+
+input {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#search-combo {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+#search-field {
+    width:16em;
+}
+
+#search-button {
+    display: flex;
+    justify-content: center;
+}
