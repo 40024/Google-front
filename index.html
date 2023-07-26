@@ -11,22 +11,33 @@
 </head>
 
 <body>
-    <div class="grid">
-        <div id="search-combo">
-            <form action="https://www.google.com/search">
-                <input id="search-field" type="text" name="q">
-                <br>
+
+    <nav>
+        <ul class="nav-left">
+            <li><a>About</a></li>
+            <li><a>Store</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="./image-search.html">Images</a></li>
+            <li><a href="./advanced-search.html">Advanced Search</a></li>
+        </ul>
+    </nav>
+
+    <div id="search-combo">
+        <img id="search-bar-logo" src="./logo.png" alt="Google logo">
+        <form action="https://www.google.com/search">
+            <input id="search-bar" type="text" name="q">
+            <br>
+            <div id="search-buttons">
                 <input id="search-button" type="submit" value="Google Search">
-            </form>
-        </div>
-
-        <div></div>
-
-        <div id="nav-div">
-            <a href="./image-search.html">Image Search</a>
-            <a href="./advanced-search.html">Advanced Search</a>
-        </div>
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
     </div>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>

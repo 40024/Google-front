@@ -1,0 +1,131 @@
+$white: #ffffff;
+
+body {
+    background-color: $white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+
+    #nav-icon {
+        margin-top: 0px;
+        margin-left: 5%;
+        width: 20%;
+        height: 5%;
+    }
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+
+    li {
+        margin-right: 25px;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        a:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.nav-left {
+    width: 20%;
+    min-width: 100px;
+}
+
+#search-bar-logo {
+    max-width: 80%;
+    height: auto;
+}
+
+#search-combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #search-bar {
+            font-size: 16px;
+            padding: 14px;
+            border: 1px solid;
+            border-radius: 30px;
+        }
+
+        #search-buttons {
+            border-color: #ffffff !important;
+        }
+    }
+}
+
+#advanced-search-div {
+
+    #fpw {
+        font-size: larger;
+    }
+
+    .adv-container {
+        display: flex;
+        justify-content: flex-start;
+        vertical-align: middle;
+        width: 100%;
+        min-width: 170px;
+        min-height: 40px;
+        margin-bottom: 0.8rem;
+        margin-left: 45px;
+
+        label {
+            width: 25%;
+            max-width: 200px;
+            margin-right: 5%;
+        }
+
+        input {
+            width: 35%
+        }
+    }
+
+    #search-button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        background-color: rgb(174, 203, 250);
+        border-width: 0px;
+        height: 32px;
+        font-size: 14px;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 1920px) {
+    #search-bar {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #search-bar {
+        width: 200px !important;
+    }
+}
